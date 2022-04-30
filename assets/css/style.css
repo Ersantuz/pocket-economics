@@ -12,3 +12,62 @@ body {
     color: #3a3a3a;
     background-color: #fbf6ef;
 }
+
+/* Header */
+
+/* headings and logo */
+
+h1, h2 {
+    font-family: 'Josefine Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #3a3a3a;
+}
+
+#logo {
+    float: left;
+    font-size: 110%;
+    margin-left: 35px;
+}
+
+#logo img {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 90%;
+    letter-spacing: 3px;
+    margin-right: 5px;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu ul{
+    float: right;
+}
+
+#menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    color: #c05c0e;
+}
+
+#menu .active {
+    color: #c05c0e;
+}
