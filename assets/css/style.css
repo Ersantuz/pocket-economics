@@ -229,7 +229,7 @@ footer {
     font-size: 150%;
 }
 
-.carousel-center{
+.carousel-center {
     transform: translate(0%, 65%);
     margin: auto 25% auto 25%;
 }
@@ -250,12 +250,12 @@ footer {
     margin: 5% 5%;
 }
 
-#team-member h2{
+#team-member h2 {
     margin-top: 15%;
     font-size: 130%;
 }
 
-#team-member p{
+#team-member p {
     margin-top: 5%;
     font-size: 130%;
     font-style: italic;
@@ -281,15 +281,18 @@ footer {
 
 #website-link {
     width: 100%;
-    margin: 15% 0;
+    margin: 5% 0;
 }
 
 .website-button {
-    font-size: 24px;
+    width: 200px;
+    font-size: 20px;
     font-weight: 900;
     color: #fbf6ef;
     letter-spacing: 1px;
     text-decoration: none;
+
+    display: inline-block;
 
     padding: 20px 20px 20px;
     margin: 5%;
@@ -318,3 +321,70 @@ footer {
     left: 0px;
   }
 
+/* Home Page for Theory Sections */
+
+#theory-home-page {
+    overflow: scroll;
+}
+
+#theory-home-page h1 {
+    font-size: 300%;
+}
+
+#theory-home-page p {
+    margin-top: 5%;
+    font-size: 120%;
+    text-align: justify;
+}
+
+.theory-hp {
+    margin: auto 15% auto 15%;
+    text-align: center;
+}
+
+hr {
+    border-top: 0.9px dashed #c05c0e ;
+    margin: 3% 10%;
+}
+
+#theory-sections {
+    margin: 5% 15% auto 15%;
+    text-align: center;
+}
+
+.theory-button {
+    margin-top: 8%;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    min-height: 40px;
+    outline: 0;
+    padding: 5% 8%;
+    margin: 0 5%;
+
+    background: #fbf6ef;
+    border: 1px solid #eb971c;
+    border-radius: 3px;
+    color: #eb971c;
+
+    text-decoration: none;
+    font-size: 300%;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 1px;
+    
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.theory-button:hover, .theory-button:active {
+  background-color: #eb971c;
+  background-position: 0 0;
+  color: #fbf6ef;
+}
+
+.theory-button:active {
+  opacity: .5;
+}
