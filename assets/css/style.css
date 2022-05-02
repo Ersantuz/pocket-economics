@@ -329,6 +329,7 @@ footer {
 
 #theory-home-page h1 {
     font-size: 300%;
+    margin-top: 2%;
 }
 
 #theory-home-page p {
@@ -348,19 +349,20 @@ hr {
 }
 
 #theory-sections {
-    margin: 5% 15% auto 15%;
+    margin: 0 15% auto 15%;
     text-align: center;
 }
 
 .theory-button {
-    margin-top: 8%;
+    width: 35%;
+    min-width: 300px;
     display: inline-block;
     box-sizing: border-box;
     cursor: pointer;
     min-height: 40px;
     outline: 0;
-    padding: 5% 8%;
-    margin: 0 5%;
+    padding: 45px 70px;
+    margin: 3% 5%;
 
     background: #fbf6ef;
     border: 1px solid #eb971c;
