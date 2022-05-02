@@ -121,7 +121,7 @@ footer {
 
 #carousel {
     height: 100%;
-    overflow: scroll element;
+    overflow: scroll;
     scroll-snap-type: y mandatory;
     overflow-y: auto;
 }
