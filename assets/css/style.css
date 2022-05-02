@@ -327,25 +327,25 @@ footer {
     overflow: scroll;
 }
 
-#theory-home-page h1 {
-    font-size: 300%;
-    margin-top: 2%;
-}
-
-#theory-home-page p {
-    margin-top: 5%;
-    font-size: 120%;
-    text-align: justify;
-}
-
 .theory-hp {
     margin: auto 15% auto 15%;
     text-align: center;
 }
 
+.theory-hp h1 {
+    font-size: 300%;
+    margin-top: 2%;
+}
+
+.theory-hp  p {
+    margin-top: 5%;
+    font-size: 120%;
+    text-align: justify;
+}
+
 hr {
     border-top: 0.9px dashed #c05c0e ;
-    margin: 3% 10%;
+    margin: 1% 10%;
 }
 
 #theory-sections {
@@ -365,13 +365,13 @@ hr {
     margin: 3% 5%;
 
     background: #fbf6ef;
-    border: 1px solid #eb971c;
+    border: 3px solid #eb971c;
     border-radius: 3px;
     color: #eb971c;
 
     text-decoration: none;
-    font-size: 300%;
-    font-weight: 400;
+    font-size: 220%;
+    font-weight: 900;
     line-height: 16px;
     text-align: center;
     text-transform: none;
@@ -389,4 +389,86 @@ hr {
 
 .theory-button:active {
   opacity: .5;
+}
+
+/* Theory Modal */
+
+.modal-out{
+    margin-top: 2%;
+    text-align: left;
+}
+
+.modal-button {
+    color: #c05c0e;
+    font-size: 80%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.modal-window {
+    position: fixed;
+    background-color: #3a3a3a;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window > div {
+    width: 60%;
+    max-height: 75%;
+    overflow: scroll;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #fbf6ef;
+}
+
+.modal-window h1 {
+    font-size: 200%;
+    text-align: left;
+    margin: 3% 10%;
+}
+
+.modal-window h2 {
+    font-size: 180%;
+    margin: 0 10%;
+    text-align: left;
+    color: #c05c0e;
+}
+
+.modal-window p {
+    font-size: 110%;
+    text-align: left;
+    margin: 1% 10% 3% 10%;
+    text-align: justify;
+}
+
+.modal-close {
+    color: #748484;
+    line-height: 50px;
+    font-size: 150%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: #3a3a3a;
 }
