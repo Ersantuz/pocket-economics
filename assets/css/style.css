@@ -370,7 +370,7 @@ hr {
     color: #c05c0e;
 
     text-decoration: none;
-    font-size: 200%;
+    font-size: 150%;
     font-weight: 900;
     line-height: 16px;
     text-align: center;
@@ -471,4 +471,52 @@ hr {
 
 .modal-close:hover {
     color: #3a3a3a;
+}
+
+/* Theory Chapters */
+
+#back a {
+    margin: 0 1%;
+    padding-left: 2%;
+    color: #3a3a3a;
+    text-decoration: none;
+    font-size: 80%;
+}
+
+#sidebar {
+    margin-top: 2%;
+    padding: 0;
+    width: 17%;
+    position: fixed;
+    height: 75%;
+    overflow: auto;
+    border-right: 0.8px dashed #c05c0e;
+}
+
+#sidebar h3 {
+    margin: 3% 15% 5% 15%;
+    display: block;
+    text-transform: uppercase;
+}
+
+#sidebar a {
+    margin: 5% 5%;
+    display: block;
+    color: #3a3a3a;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;  
+    padding: 10px;
+}
+
+#sidebar a:hover {
+    color: #fbf6ef;
+    border-radius: 3px;
+    background-color: #c05c0e;
+}
+
+#sidebar .active-chapter {
+    color: #fbf6ef;
+    border-radius: 3px;
+    background-color: #c05c0e;
 }
