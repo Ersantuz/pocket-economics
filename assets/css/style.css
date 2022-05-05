@@ -101,7 +101,7 @@ footer {
 /* Home Page Section */
 
 /* Welcome */
-#home-page {
+section {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -475,22 +475,35 @@ hr {
 
 /* Theory Chapters */
 
+#chapeter {
+    flex-direction: row;
+}
+
+#back {
+    width: 100%;
+}
+
 #back a {
+    position: fixed;
     margin: 0 1%;
     padding-left: 2%;
     color: #3a3a3a;
     text-decoration: none;
-    font-size: 80%;
+    font-size: 70%;
 }
+
+/* Link to other chapters */
 
 #sidebar {
     margin-top: 2%;
     padding: 0;
     width: 17%;
     position: fixed;
+    flex: 0 0 17%;
     height: 75%;
     overflow: auto;
     border-right: 0.8px dashed #c05c0e;
+    display: inline-block;
 }
 
 #sidebar h3 {
@@ -519,4 +532,33 @@ hr {
     color: #fbf6ef;
     border-radius: 3px;
     background-color: #c05c0e;
+}
+
+#content {
+    float: right;
+    padding: 0 5%;
+    height: 100%;
+    max-width: 70%;
+    overflow: scroll;
+}
+
+/* Chapter */
+
+#content h1 {
+    font-size: 150%;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 3% 0 2% 0;
+}
+
+#content h2 {
+    font-size: 130%;
+    color: #c05c0e;
+
+}
+
+#content p {
+    font-size: 100%;
+    text-align: justify;
+    margin: 0.5% 0 2.5% 0;
 }
