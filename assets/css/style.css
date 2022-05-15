@@ -6,25 +6,40 @@
     border: none;
 }
 
+:root {
+    /* light */
+    --bg: #fbf6ef;
+    --text-col: #3a3a3a;
+    --highlight: #c05c0e;
+    --hp-button: #eb971c;
+    --img-circle-col: rgba(85, 55, 55, 0.2);
+    --footer-col: #748484;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    color: #3a3a3a;
-    background-color: #fbf6ef;
+    color: var(--text-col);
+    background-color: var(--bg);
 
     height: 100vh;
     display: grid;
-    grid-template-rows: 10% auto 30px;
+    grid-template-rows: 10vh auto 30px;
 }
 
 /* Header */
+
+header {
+    width: 100%;
+    height: 10vh;
+}
 
 /* headings and logo */
 
 h1, h2 {
     font-weight: 900;
     letter-spacing: 1px;
-    color: #3a3a3a;
+    color: var(--text-col);
 }
 
 #logo {
@@ -36,7 +51,7 @@ h1, h2 {
 }
 
 .highlight {
-    color: #c05c0e;
+    color: var(--highlight);
 }
 
 #logo img {
@@ -74,11 +89,11 @@ h1, h2 {
 }
 
 #menu a:hover {
-    color: #c05c0e;
+    color: var(--highlight);
 }
 
 #menu .active {
-    color: #c05c0e;
+    color: var(--highlight);
 }
 
 /* Footer */
@@ -86,14 +101,14 @@ h1, h2 {
 footer {
     position:absolute;
     bottom:0;
-    width:100%;
+    width: 100%;
     height: 30px;   /* Height of the footer */
     background: inherit;
  }
 
  footer p {
-     color: #748484;
-     font-size: 0.8rem;
+     color: var(--footer-col);
+     font-size: 80%;
      float: right;
      margin-right: 20px;
  }
@@ -147,10 +162,10 @@ section {
     outline: 0;
     padding: 12px 14px;
 
-    background: #eb971c;
-    border: 1px solid #eb971c;
+    background: var(--hp-button);
+    border: 1px solid var(--hp-button);
     border-radius: 6px;
-    color: #fbf6ef;
+    color: var(--bg);
 
     text-decoration: none;
     font-size: 20px;
@@ -167,7 +182,7 @@ section {
 .carousel-button:hover, .carousel-button:active {
   background-color: initial;
   background-position: 0 0;
-  color: #eb971c;
+  color: var(--hp-button);
 }
 
 .carousel-button:active {
@@ -215,7 +230,6 @@ section {
 
     overflow: hidden;
     text-align: center;
-    vertical-align: middle;
 
     position: relative;
 }
@@ -230,8 +244,8 @@ section {
 }
 
 .carousel-center {
-    transform: translate(0%, 65%);
-    margin: auto 25% auto 25%;
+    transform: translateX(0%) translateY(25vh);
+    margin: 0 25% 0 25%;
 }
 
 /* The Team */
@@ -244,7 +258,7 @@ section {
     height: 200px;
     padding: 10px;
     border-style: dotted;
-    border-color: rgba(85, 55, 55, 0.2);
+    border-color: var(--img-circle-col);
     border-width: 1px;
     border-radius: 50%;
     margin: 5% 5%;
@@ -288,7 +302,7 @@ section {
     width: 200px;
     font-size: 20px;
     font-weight: 900;
-    color: #fbf6ef;
+    color: var(--bg);
     letter-spacing: 1px;
     text-decoration: none;
 
@@ -297,7 +311,7 @@ section {
     padding: 20px 20px 20px;
     margin: 5%;
     outline: 0;
-    border: 1px solid #3a3a3a;
+    border: 1px solid var(--text-col);
     cursor: pointer;
     position: relative;
     background-color: rgba(0, 0, 0, 0);
@@ -306,7 +320,7 @@ section {
   
   .website-button:after {
     content: "";
-    background-color: #eb971c;
+    background-color: var(--hp-button);
     width: 100%;
     z-index: -1;
     position: absolute;
@@ -344,7 +358,7 @@ section {
 }
 
 hr {
-    border-top: 0.9px dashed #c05c0e ;
+    border-top: 0.9px dashed var(--highlight);
     margin: 1% 10%;
 }
 
@@ -364,10 +378,10 @@ hr {
     padding: 45px 70px;
     margin: 3% 5%;
 
-    background: #fbf6ef;
-    border: 3px solid #c05c0e;
+    background: var(--bg);
+    border: 3px solid var(--highlight);
     border-radius: 3px;
-    color: #c05c0e;
+    color: var(--highlight);
 
     text-decoration: none;
     font-size: 150%;
@@ -382,9 +396,9 @@ hr {
 }
 
 .theory-button:hover, .theory-button:active {
-  background-color: #c05c0e;
+  background-color: var(--highlight);
   background-position: 0 0;
-  color: #fbf6ef;
+  color: var(--bg);
 }
 
 .theory-button:active {
@@ -399,7 +413,7 @@ hr {
 }
 
 .modal-button {
-    color: #c05c0e;
+    color: var(--highlight);
     font-size: 80%;
     text-transform: uppercase;
     text-decoration: none;
@@ -407,7 +421,7 @@ hr {
 
 .modal-window {
     position: fixed;
-    background-color: #3a3a3a;
+    background-color: var(--text-col);
     top: 0;
     right: 0;
     bottom: 0;
@@ -434,7 +448,7 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2em;
-    background: #fbf6ef;
+    background: var(--bg);
 }
 
 .modal-window h1 {
@@ -447,7 +461,7 @@ hr {
     font-size: 180%;
     margin: 0 8%;
     text-align: left;
-    color: #c05c0e;
+    color: var(--highlight);
 }
 
 .modal-window p {
@@ -470,7 +484,7 @@ hr {
 }
 
 .modal-close:hover {
-    color: #3a3a3a;
+    color: var(--text-col);
 }
 
 /* Theory Chapters */
@@ -487,9 +501,9 @@ hr {
     position: fixed;
     margin: 0 1%;
     padding-left: 2%;
-    color: #3a3a3a;
+    color: var(--text-col);
     text-decoration: none;
-    font-size: 70%;
+    font-size: 80%;
 }
 
 /* Link to other chapters */
@@ -502,7 +516,7 @@ hr {
     flex: 0 0 17%;
     height: 75%;
     overflow: auto;
-    border-right: 0.8px dashed #c05c0e;
+    border-right: 0.8px dashed var(--highlight);
     display: inline-block;
 }
 
@@ -515,7 +529,7 @@ hr {
 #sidebar a {
     margin: 5% 5%;
     display: block;
-    color: #3a3a3a;
+    color: var(--text-col);
     text-decoration: none;
     text-transform: capitalize;
     text-align: center;  
@@ -523,15 +537,15 @@ hr {
 }
 
 #sidebar a:hover {
-    color: #fbf6ef;
+    color: var(--bg);
     border-radius: 3px;
-    background-color: #c05c0e;
+    background-color: var(--highlight);
 }
 
 #sidebar .active-chapter {
-    color: #fbf6ef;
+    color: var(--bg);
     border-radius: 3px;
-    background-color: #c05c0e;
+    background-color: var(--highlight);
 }
 
 #content {
@@ -545,15 +559,25 @@ hr {
 /* Chapter */
 
 #content h1 {
-    font-size: 150%;
-    font-weight: 400;
+    font-size: 180%;
+    font-weight: 900;
     text-transform: uppercase;
     margin: 3% 0 2% 0;
 }
 
 #content h2 {
     font-size: 130%;
-    color: #c05c0e;
+    text-transform: capitalize;
+    color: var(--highlight);
+    margin: 3% 0 1% 0;
+
+}
+
+#content h3 {
+    font-size: 120%;
+    text-transform: capitalize;
+    color: var(--hp-button);
+    margin: 1% 0 1% 0;
 
 }
 
@@ -564,5 +588,22 @@ hr {
 }
 
 .next {
-    font-size: medium;
+    font-size: 16px;
+}
+
+#content li {
+    list-style-type: none; 
+    text-align: justify;
+    margin-bottom: 2%;
+}
+
+#content ul > li:before {   
+    font-family: 'FontAwesome';
+    content: '\f1b2';
+    margin:0 1% 0 -2.5%;
+    color: var(--highlight);
+}
+
+#content ol > li {   
+    margin: 2%;
 }
