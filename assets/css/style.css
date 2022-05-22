@@ -65,7 +65,7 @@ h1, h2 {
 /* navigation links */
 
 #menu {
-    font-size: 100%;
+    font-size: 80%;
     letter-spacing: 3px;
     margin-right: 5px;
 }
@@ -82,6 +82,10 @@ h1, h2 {
     float: left;
     list-style-type: none;
     margin-right: 30px;
+}
+
+.phone-menu{
+    visibility: hidden;
 }
 
 #menu a {
@@ -127,11 +131,11 @@ section {
 }
 
 #home-page h1 {
-    font-size: 300%;
+    font-size: 3.5vw;
 }
 
 #home-page p {
-    font-size: 150%;
+    font-size: 1.5vw;
 }
 
 /* Carousel */
@@ -350,7 +354,7 @@ section {
 
 .theory-hp h1 {
     font-size: 300%;
-    margin-top: 2%;
+    margin: 2% 0;
 }
 
 .theory-hp  p {
@@ -361,11 +365,11 @@ section {
 
 hr {
     border-top: 0.9px dashed var(--highlight);
-    margin: 1% 0;
+    margin: 1% 0 3% 0;
 }
 
 .modal-phone {
-    visibility: hidden;
+    display: none;
 }
 
 #theory-sections {
@@ -414,7 +418,7 @@ hr {
 /* Theory Modal */
 
 .modal-out{
-    margin-top: 2%;
+    margin-top: 3%;
     text-align: left;
 }
 
@@ -642,7 +646,7 @@ hr {
     /* Welcome */
     
     #home-page h1 {
-        font-size: 250%;
+        font-size: 5.5vw;
         text-align: center;
         margin: 0 10%;
     }
@@ -674,7 +678,7 @@ hr {
 
     .carousel-button{
         padding: 2vh 3.5vh;
-        font-size: 150%;
+        font-size: 3.5vw;
     }
     
     /* Carousel Media */
@@ -705,16 +709,21 @@ hr {
     /* Home Page for Theory Sections */
 
     .modal-computer {
-        visibility: hidden;
+        display: none;
     }
 
     .modal-phone {
+        display: block;
         visibility: visible;
         margin: 3vh 0;
     }
 
     #theory-sections{
         padding: 5vh 0;
+    }
+
+    hr {
+        margin: 1% 0;
     }
 
     /* Theory Modal */
@@ -741,13 +750,14 @@ hr {
     }
 
     #sidebar {
-        visibility: hidden;
-        width: 0%;
+        display: none;
     }
 
     #back {
         visibility: hidden;
     }
+
+    /* Content */
 
     #content {
         padding: 0 10vw;
@@ -764,6 +774,7 @@ hr {
     }
 
     #content p, li {
+        list-style-position: outside;
         margin-top: 2vh;
         font-size: 100%;
     }
@@ -795,23 +806,27 @@ hr {
 
     #section-hamburger h1 {
         color: var(--text-col);
-        font-size: 200%;
+        font-size: 4vw;
         text-align: center;
         margin: 5% 0;
+    }
+
+    #section-hamburger i {
+        font-size: 200%;
     }
 
     #section-hamburger ol > li {
         display: list-item;
         list-style-position: outside;
         list-style-type: decimal-leading-zero;
-        font-size: 150%;
+        font-size: 2.5vw;
         font-weight: 900;
         margin: 10% 10%;
     }
 
     #section-hamburger a {
         color: var(--text-col);
-        font-size: 100%;
+        font-size: 3vw;
         font-weight: 400;
         text-align: justify;
         text-decoration: none;
@@ -825,9 +840,231 @@ hr {
 
 }
 
-/* For small screens size from 800 px wide and down */
+/* For small screens size from 480 px wide and down */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
+
+    /* Header */
+
+    header {
+        height: 8vh;
+    }
+
+    /* Footer */
     
+    footer {
+        font-size: 80%;
+    }
+
+    /* headings and logo */
+
+    #logo {
+        font-size: 70%;
+    }
+    
+    #logo img {
+        width: 15px;
+        margin-bottom: 3px;
+    }
+
+    /* Navigation Menu */
+    
+    .computer-menu{
+        display: none;
+    }
+
+    .phone-menu{
+        visibility: visible;
+    }
+
+    .phone-menu i {
+        font-size: 150%;
+    }
+
+    #hamburger-menu li {
+        text-align: center;
+        font-size: 130%;
+        margin: 5% 10%;
+        padding-left: 25%;
+    }
+
+    /* Home Page Section */
+    
+    /* Carousel */
+    
+    .carousel-left {
+        transform: translateY(5vh);
+    }
+    
+    .carousel-right {
+        transform: translateY(45vh);
+    }
+
+    /* Carousel Media */
+
+    #carousel-1 {
+        background-position: 50% 75%;
+        background-size: 90%;
+    }
+    
+    #carousel-2 {
+        background-position: 50% 10%;
+        background-size: 70%;
+    }
+    
+    #carousel-3 {
+        background-position: 55% 70%;
+        background-size: 80%;
+    }
+
+    /* About page */
+
+    #about-page {
+        margin-top: 0;
+    }
+
+    #about-page h1 {
+        font-size: 6vw;
+    }
+
+    #about-page p {
+        margin-top: 2vh;
+        font-size: 4vw;
+    }
+
+    /* The Team */
+
+    /* Circle Container and media */
+
+    .circle-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    #team h1 {
+        padding-top: 5%;
+    }
+
+    #team-member h2 {
+        font-size: 4vw;
+    }
+
+    #team-member p {
+        font-size: 3.3vw;
+    }
+
+    /* Website we Love */
+
+    .website-button {
+        font-size: 3.3vw;
+        margin: 10% -20%;
+    }
+
+    /* Home Page for Theory Sections */
+
+    .theory-hp h1 {
+        font-size: 6vw;
+    }
+
+    .theory-hp  p {
+        font-size: 3.5vw;
+    }
+
+    /* Theory Modal */
+
+    .modal-out{
+        font-size: 75%;
+    }
+
+    .modal-button {
+        font-size: 75%;
+    }
+
+    /* Theory Modal */
+
+    .modal-window h1 {
+        font-size: 4vw;
+        margin-bottom: 8%;
+    }
+    
+    .modal-window h2 {
+        font-size: 3.3vw;
+        margin-bottom: 2%;
+    }
+    
+    .modal-window p {
+        font-size: 2.5vw;
+        margin-bottom: 6%;
+    }
+
+    /* Chapter button */
+
+    .theory-button {
+        min-width: 0;
+        width: 60vw;
+        padding: 3.5vh 4vw;
+        font-size: 100%;
+        margin: 3vh 0;
+    }
+
+    /* Theory Chapters */
+
+    /* Link to other sections */
+
+    #chapters {
+        margin-top: 5%;
+    }
+
+    #content {
+        padding: 0 15vw;
+    }
+
+    #content h1 {
+        font-size: 6vw;
+    }
+
+    #content h2 {
+        font-size: 4.5vw;
+    }
+
+    #content p, li {
+        font-size: 3.5VW;
+    }
+
+    #content > .carousel-button {
+        width: 90%;
+        transform: translateX(-20vw);
+        margin-bottom: 15vh;
+    }
+
+    /* Sections Hamburger menu */
+
+    .section-out {
+        right: 75%;
+        bottom: 7%;
+        font-size: 80%;
+    }
+
+    #section-hamburger h1 {
+        font-size: 4vw;
+        margin: 8% 0;
+    }
+
+    #section-hamburger i {
+        font-size: 200%;
+    }
+
+    #section-hamburger ol > li {
+        font-size: 3vw;
+    }
+
+    #section-hamburger a {
+        font-size: 4vw;
+    }
+
+    #section-hamburger .active {
+        color: var(--highlight);
+    } 
+
 }
 

@@ -15,21 +15,37 @@
         <a href="index.html">
             <h1 id="logo"> <img src="./assets/images/pocket_logo.png" alt="logo"> <span class="highlight">Pocket</span>Economics</h1>
         </a>
+
         <nav id="menu">
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
+                <li class="phone-menu">
+                    <a class="hamburger" href="#hamburger-menu" aria-label="website menu"><i class="fas fa-bars"></i></a>
                 </li>
-                <li>
+                <li class="computer-menu">
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li class="computer-menu">
                     <a href="macro.html">Macro</a>
                 </li>
-                <li>
+                <li class="computer-menu">
                     <a href="micro.html">Micro</a>
                 </li>
-                <li>
-                    <a href="about.html" class="active">About</a>
+                <li class="computer-menu">
+                    <a href="about.html">About</a>
                 </li>
             </ul>
+            <!-- hamburger menu -->
+            <div id="hamburger-menu" class="modal-window">
+                <div>
+                    <a href="#" class="modal-close" aria-label="close modal"><i class="fa-solid fa-circle-xmark"></i></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="macro.html">Macro</a></li>
+                        <li><a href="micro.html">Micro</a></li>
+                        <li><a href="about.html" class="active">About</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <section id="about-page">
@@ -70,5 +86,7 @@
     <footer>
         <p>&copy; Agree to Disagree 2022</p>
     </footer>
+    <!-- fontawsome script -->
+    <script src="https://kit.fontawesome.com/5a447ed7c5.js" crossorigin="anonymous"></script
 </body>
 </html>
