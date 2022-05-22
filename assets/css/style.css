@@ -500,6 +500,7 @@ hr {
 /* Theory Chapters */
 
 #chapeter {
+    width: 100%;
     flex-direction: row;
 }
 
@@ -840,9 +841,9 @@ hr {
 
 }
 
-/* For small screens size from 480 px wide and down */
+/* For small screens size from 680 px wide and down */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
     /* Header */
 
