@@ -25,7 +25,7 @@ body {
 
     height: 100vh;
     display: grid;
-    grid-template-rows: 10vh auto 30px;
+    grid-template-rows: 7vh auto 30px;
 }
 
 /* Header */
@@ -65,7 +65,7 @@ h1, h2 {
 /* navigation links */
 
 #menu {
-    font-size: 90%;
+    font-size: 100%;
     letter-spacing: 3px;
     margin-right: 5px;
 }
@@ -95,41 +95,7 @@ h1, h2 {
 
 #menu .active {
     color: var(--highlight);
-}
-
-/* Dark theme button */
-
-.switch input {
-    position: absolute;
-    opacity: 0;
-  }
-  
-.switch {
-    display: inline-block;
-    font-size: 20px; /* 1 */
-    height: 1em;
-    width: 2em;
-    background: #BDB9A6;
-    border-radius: 1em;
-}
-  
-.switch div {
-    height: 1em;
-    width: 1em;
-    border-radius: 1em;
-    background: #FFF;
-    box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
-    -webkit-transition: all 300ms;
-       -moz-transition: all 300ms;
-            transition: all 300ms;
-}
-  
-.switch input:checked + div {
-    -webkit-transform: translate3d(100%, 0, 0);
-       -moz-transform: translate3d(100%, 0, 0);
-            transform: translate3d(100%, 0, 0);
-}
-  
+} 
 
 /* Footer */
 
@@ -154,6 +120,7 @@ footer {
 section {
     height: 100%;
     width: 100%;
+    margin-top: 3vh;
     overflow: hidden;
 
     position: relative;
@@ -195,7 +162,7 @@ section {
     cursor: pointer;
     min-height: 40px;
     outline: 0;
-    padding: 12px 14px;
+    padding: 2vh 3.5vh;
 
     background: var(--hp-button);
     border: 1px solid var(--hp-button);
@@ -225,7 +192,7 @@ section {
 }
 
 .carousel-left {
-    width: 60%;
+    width: 50%;
     float: left;
     margin: 10% 0 0 5%;
 }
@@ -387,14 +354,18 @@ section {
 }
 
 .theory-hp  p {
-    margin-top: 5%;
+    margin-top: 0;
     font-size: 120%;
     text-align: justify;
 }
 
 hr {
     border-top: 0.9px dashed var(--highlight);
-    margin: 1% 10%;
+    margin: 1% 0;
+}
+
+.modal-phone {
+    visibility: hidden;
 }
 
 #theory-sections {
@@ -541,7 +512,7 @@ hr {
     font-size: 80%;
 }
 
-/* Link to other chapters */
+/* Link to other sections */
 
 #sidebar {
     margin-top: 2%;
@@ -584,6 +555,7 @@ hr {
 }
 
 #content {
+    position: relative;
     float: right;
     padding: 0 5%;
     height: 100%;
@@ -622,9 +594,6 @@ hr {
     margin: 0.5% 0 2.5% 0;
 }
 
-.next {
-    font-size: 16px;
-}
 
 #content li {
     list-style-type: none; 
@@ -642,3 +611,223 @@ hr {
 #content ol > li {   
     margin: 2%;
 }
+
+#content > .carousel-button {
+    margin: 10vh 0 10vh 25vw;
+}
+
+#section-hamburger {
+    visibility: hidden;
+}
+
+/* For medium screens size from 950 px wide and down */
+
+@media screen and (max-width: 950px) {
+    
+    /* Header */
+    
+    header {
+        height: 5vh;
+    }
+
+    /* navigation links */
+    
+    #menu li {
+        margin-top: 0;
+        font-size: 90%;
+    }
+
+    /* Home Page Section */
+    
+    /* Welcome */
+    
+    #home-page h1 {
+        font-size: 250%;
+        text-align: center;
+        margin: 0 10%;
+    }
+    
+    #home-page p {
+        visibility: hidden;
+        margin: 0;
+    }
+    
+    /* Carousel */
+    
+    #carousel p {
+        margin-top: 0;
+    }
+    
+    .carousel-left {
+        width: 100%;
+        text-align: center;
+        transform: translateY(2vh);
+        margin: 10vh 0;
+    }
+    
+    .carousel-right {
+        width: 100%;
+        text-align: center;
+        transform: translateY(50vh);
+        margin: 10vh 0;
+    }
+
+    .carousel-button{
+        padding: 2vh 3.5vh;
+        font-size: 150%;
+    }
+    
+    /* Carousel Media */
+
+    #carousel-1 {
+        background-position: 50% 80%;
+        background-size: 90%;
+    }
+    
+    #carousel-2 {
+        background-position: 50% 10%;
+        background-size: 70%;
+    }
+    
+    #carousel-3 {
+        background-position: 50% 75%;
+        background-size: 80%;
+    }
+
+    /* About */
+
+    /* The Team */
+
+    .circle-container {
+        margin: 5vh 25vw;
+    }
+
+    /* Home Page for Theory Sections */
+
+    .modal-computer {
+        visibility: hidden;
+    }
+
+    .modal-phone {
+        visibility: visible;
+        margin: 3vh 0;
+    }
+
+    #theory-sections{
+        padding: 5vh 0;
+    }
+
+    /* Theory Modal */
+
+    .modal-window h1 {
+        font-size: 180%;
+    }
+    
+    .modal-window h2 {
+        font-size: 130%;
+        margin-bottom: 2%;
+    }
+    
+    .modal-window p {
+        font-size: 100%;
+    }
+
+    /* Theory Chapters */
+
+    /* Link to other sections */
+
+    #chapters {
+        margin-top: 0;
+    }
+
+    #sidebar {
+        visibility: hidden;
+        width: 0%;
+    }
+
+    #back {
+        visibility: hidden;
+    }
+
+    #content {
+        padding: 0 10vw;
+        max-width: 90%;
+    }
+
+    #content h1 {
+        text-align: center;
+    }
+
+    #content h2 {
+        margin-top: 2vh;
+        font-size: 150%;
+    }
+
+    #content p, li {
+        margin-top: 2vh;
+        font-size: 100%;
+    }
+
+    #content > .carousel-button {
+        transform: translateX(-5vw);
+    }
+
+    /* Sections Hamburger menu */
+
+    #section-hamburger {
+        visibility: visible;
+    }
+
+    .section-out {
+        position: fixed;
+        right: 4%;
+        bottom: 5%;
+        padding: 4%;
+        font-size: 150%;
+        z-index: 2;
+        border-radius: 50%;
+        background-color: var(--highlight);
+    }
+
+    .section-out i {
+        color: var(--bg);
+    }
+
+    #section-hamburger h1 {
+        color: var(--text-col);
+        font-size: 200%;
+        text-align: center;
+        margin: 5% 0;
+    }
+
+    #section-hamburger ol > li {
+        display: list-item;
+        list-style-position: outside;
+        list-style-type: decimal-leading-zero;
+        font-size: 150%;
+        font-weight: 900;
+        margin: 10% 10%;
+    }
+
+    #section-hamburger a {
+        color: var(--text-col);
+        font-size: 100%;
+        font-weight: 400;
+        text-align: justify;
+        text-decoration: none;
+        text-transform: capitalize;
+        margin: 3% 0 3% 2%;
+    }
+
+    #section-hamburger .active {
+        color: var(--highlight);
+    } 
+
+}
+
+/* For small screens size from 800 px wide and down */
+
+@media screen and (max-width: 800px) {
+    
+}
+
