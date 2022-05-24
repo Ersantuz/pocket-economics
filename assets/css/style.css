@@ -860,7 +860,7 @@ hr {
     /* headings and logo */
 
     #logo {
-        font-size: 70%;
+        font-size: 80%;
     }
     
     #logo img {
@@ -1067,5 +1067,165 @@ hr {
         color: var(--highlight);
     } 
 
+    @media screen and (orientation: landscape) {
+        
+        /* Header */
+
+        header {
+            height: 15vh;
+            z-index: 2;
+        }
+
+        /* Navigation Menu */
+    
+        #hamburger-menu li {
+            margin: 0 25% 0 1%;
+            padding-left: 0;
+        }
+
+        /* Home Page Section */
+    
+        /* Carousel */
+    
+        .carousel-left {
+            transform: translateY(7vh);
+        }
+    
+        .carousel-right {
+            transform: translateY(7vh);
+        }
+
+        /* Carousel Media */
+
+        #carousel-1 {
+            background: none;
+        }
+    
+        #carousel-2 {
+            background: none;
+        }
+    
+        #carousel-3 {
+            background: none;
+        }
+
+        /* About page */
+
+        #about-page h1 {
+            font-size: 6vh;
+        }
+
+        #about-page p {
+            margin-top: 2vw;
+            font-size: 4vh;
+        }
+
+        /* The Team */
+
+        /* Circle Container and media */
+
+        .circle-container {
+            margin: 5vh 4vw;
+        }
+
+        #team-member h2 {
+            font-size: 4vh;
+        }
+
+        #team-member p {
+            font-size: 3.3vh;
+        }
+
+        /* Website we Love */
+
+        .website-button {
+            font-size: 65%;
+            max-width: 15vw;
+            margin: 5vh 1vw;
+            padding: 5%;
+        }
+
+        /* Home Page for Theory Sections */
+
+        .theory-hp h1 {
+            font-size: 6vh;
+        }
+
+        .theory-hp  p {
+            font-size: 3.5vh;
+        }   
+
+        /* Theory Modal */
+
+        .modal-window h1 {
+            font-size: 4vh;
+        }
+    
+        .modal-window h2 {
+            font-size: 3.3vh;
+        }
+    
+        .modal-window p {
+            font-size: 2.5vh;
+        }
+
+        /* Chapter button */
+
+        .theory-button {
+            width: 60vh;
+            padding: 3.5vw 4vh;
+            margin: 3vw 0;
+        }
+
+        /* Theory Chapters */
+
+        /* Link to other sections */
+
+        #content {
+            padding: 0 15vh;
+        }
+
+        #content h1 {
+            font-size: 6vh;
+        }
+
+        #content h2 {
+            font-size: 4.5vh;
+        }
+
+        #content p, li {
+            font-size: 3.5vh;
+        }
+
+        #content > .carousel-button {
+            width: 50vw;
+            transform: translateX(-10vh);
+            margin-bottom: 15vw;
+        }
+
+        /* Sections Hamburger menu */
+
+        .section-out {
+            padding: 2%;
+            font-size: 40%;
+            right: 85%;
+        }
+
+        #section-hamburger h1 {
+            font-size: 4vh;
+        }
+
+        #section-hamburger ol > li {
+            font-size: 3vh;
+        }
+
+        #section-hamburger a {
+            font-size: 4vh;
+        }
+    
+    }
+
 }
+
+
 
