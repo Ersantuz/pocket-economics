@@ -1,4 +1,3 @@
-<script src="https://gist.github.com/rxaviers/7360908.js"></script>
 <h1 align="center">
     <img src="assets/images/pocket_logo.png" width=25 alt="PocketEconomics logo"/> PocketEconomics
 </h1>
@@ -110,7 +109,7 @@ The project was deployed to GitHub Pages using the following steps...
 ### Content
 
 -   All the code was written by the developer.
--   The theoretical content was written in association with [Enrico Mattia Salonia]("https://enricomattia.github.io/"), PhD student and teaching assistant at [TSE](https://www.tse-fr.eu/?lang=en) 
+-   The theoretical content was written in association with [Enrico Mattia Salonia](https://enricomattia.github.io/), PhD student and teaching assistant at [TSE](https://www.tse-fr.eu/?lang=en) 
 
 ### Media
 
@@ -122,7 +121,7 @@ The project was deployed to GitHub Pages using the following steps...
 
 -   My Mentor for continuous helpful feedback.
 
--   Tutor support at Code Institute for their **support**.
+-   Tutor support for their **support**.
 
 
 
