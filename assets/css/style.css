@@ -441,6 +441,7 @@ hr {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s;
+    pointer-events: auto;
 }
 
 .modal-window:target {
