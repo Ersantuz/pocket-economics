@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="The economics textbook in your pocket. Learn about micro and macroeconomics.">
+    <meta name="keywords" content="pocketeconomics, economics, microeconomics, macroeconomics">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="./assets/images/pocket_logo.png" sizes="16x16">
+    <title>PocketEconomics</title>
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1 id="logo"> <img src="./assets/images/pocket_logo.png" alt="logo"> <span class="highlight">Pocket</span>Economics</h1>
+        </a>
+
+        <nav id="menu">
+            <ul>
+                <li class="phone-menu">
+                    <a class="hamburger" href="#hamburger-menu" aria-label="website menu"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="computer-menu">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="computer-menu">
+                    <a href="macro.html" class="active">Macro</a>
+                </li>
+                <li class="computer-menu">
+                    <a href="micro.html">Micro</a>
+                </li>
+                <li class="computer-menu">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+            <!-- hamburger menu -->
+            <div id="hamburger-menu" class="modal-window">
+                <div>
+                    <a href="#" class="modal-close" aria-label="close modal"><i class="fa-solid fa-circle-xmark"></i></a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="macro.html" class="active">Macro</a></li>
+                        <li><a href="micro.html">Micro</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="chapters">
+        <div id="back">        
+        <a href="macro.html" aria-label="go back to macroeconomics home page"><i class="fas fa-arrow-left"></i> Macroeconomics</a>
+        </div>
+        <div id="sidebar">
+            <h3>Short Run</h3>
+            <a class="active-chapter" href="goods-market.html">The goods market</a>
+            <a href="#financial-market">Financial markets</a>
+            <a href="#is-lm">Goods and financial markets: the IS–LM model</a>
+            <a href="#is-lm-open">The IS–LM model in an open economy</a>
+        </div>
+        <article id="content">
+            <h1>The goods market</h1>
+            <h2>The composition of GDP</h2>
+            <p>The purchase of a machine by a firm, the decision to go to a restaurant by a consumer and
+                the purchase of school desks by the national government are clearly very different decisions
+                and depend on very different factors. So, if we want to understand what determines the
+                demand for goods, it makes sense to decompose aggregate output (GDP) from the point
+                of view of the different goods being produced, and from the point of view of the different
+                buyers for these goods. </p>
+            
+            <p>The decomposition of GDP typically used by macroeconomists is: </p>
+
+            <ul>
+                <li>First comes <span class="highlight">consumption</span> (which we will denote by the letter <span class="highlight">C</span> when we use algebra). 
+                    These are the goods and services purchased by consumers, ranging from food to airline tickets, 
+                    to holidays, to new cars and so on. Consumption is by far
+                    the largest component of GDP. In 2008, it accounted, on average, for 57.3% of GDP in
+                    the EU (EU15), ranging from 46.2% in the Netherlands to 71.2% in Greece. In general,
+                    consumption is close to 60% or more of national income in the largest European
+                    economies (56.3% in Germany, 57.2% in Spain, 56.7% in France, 59.1% in Italy and up
+                    to 64.7% in the UK), whereas in smaller countries consumption tends to be closer to
+                    50% of GDP (46.2% in the Netherlands, 46.5% in Sweden, 48.9% in Denmark, 51.4% in
+                    Finland and 52.9% in Austria).</li>
+                <li>Second comes <span class="highlight">investment (I)</span>, sometimes called fixed investment to distinguish it from
+                    inventory investment (which we will discuss shortly). Investment is the sum of nonresidential investment, the purchase by firms of new plants or new machines (from
+                    turbines to computers), and residential investment, the purchase by people of new
+                    houses or apartments.
+                    Non-residential investment and residential investment, and the decisions behind
+                    them, have more in common than might first appear. Firms buy machines or plants to
+                    produce output in the future. People buy houses or apartments to get housing services
+                    in the future. In both cases, the decision to buy depends on the services these goods
+                    will yield in the future. Consequently, it makes sense to treat them together. Together,
+                    non-residential and residential investment accounted, on average, for 20.8% of GDP in
+                    EU15 in 2008, ranging from 16.6% in the UK and 19.6% in Sweden to 29.4% in Spain.</li>
+                <li>Third comes <span class="highlight">government spending (G)</span>. This represents the purchases of goods and
+                    services by the national, regional and local governments. The goods range from aeroplanes to office equipment. The services include services provided by government
+                    employees: in effect, the national income accounts treat the government as buying the
+                    services provided by government employees – and then providing these services to
+                    the public, free of charge.
+                    Note that G does not include <span class="highlight">government transfers</span> 
+                    (for instance, unemploymentbenefits and pensions), or interest payments on the government debt. 
+                    Although these are clearly government expenditures, they are not purchases of goods and services. In
+                    2008, government spending accounted on average for 20.9% of GDP in EU15. With the
+                    notable exception of Germany, where government expenditure is relatively lower, the
+                    largest European countries are all close to the average (the UK slightly above with
+                    21.9%), whereas government spending accounts for particularly high shares of GDP in
+                    northern European countries (22.1% in Finland, 23.0% in Belgium, 25.0% in the
+                    Netherlands, 26.4% in Sweden and 26.5% in Denmark).</li>
+                    <li>The sum of the first three ponits gives the purchases of goods and services by resident consumers, resident firms and the government. To determine the purchases of domestic goods
+                        and services, two more steps are needed:
+                        <ol>
+                            <li>First, we must subtract <span class="highlight">imports (IM)</span>, the purchases of foreign goods and services by
+                                domestic consumers, domestic firms, and the government.</li>
+                            <li>Second, we must add <span class="highlight">exports (X)</span>, the purchases of domestic goods and services by
+                                foreigners.</li>
+                        </ol>
+                        The difference between exports and imports (X – IM) is called <span class="highlight">net exports</span>, or the
+                        <span class="highlight">trade balance</span>. If exports exceed imports, the country is said to run a trade surplus. If
+                        exports are less than imports, the country is said to run a trade deficit. In 2008, exports
+                        from EU15 accounted for 40.0% of GDP and imports were equal to 39.4% of GDP,
+                        so EU15 had a trade surplus equal to 0.6% of GDP. Again, this average hides substantial
+                        differences across countries: Belgium, Italy, Spain and the UK were running trade
+                        deficits, while most northern European countries, as well as Germany, Denmark and the
+                        Netherlands, had considerable trade surpluses</li>
+                    <li>So far we have looked at various sources of purchases (sales) of domestic goods and services in 2008. To determine national production in 2008, we need to take one last step.
+                        In any given year, production and sales need not be equal. Some of the goods produced
+                        in a given year are not sold in that year, but in later years. And some of the goods sold in
+                        a given year may have been produced in an earlier year. The difference between goods
+                        produced and goods sold in a given year – the difference between production and sales,
+                        in other words – is called <span class="highlight">inventory investment</span>. If production exceeds sales and firms
+                        accumulate inventories as a result, then inventory investment is said to be positive. If
+                        production is less than sales, and firms inventories fall, then inventory investment is said
+                        to be negative. Inventory investment is typically small – positive in some years and negative
+                        in others. In 2008, inventory investment was positive, equal to just a43 billion, or 0.4% of
+                        GDP. Put another way, production was higher than sales by an amount equal to a43 billion.</li>
+            </ul>
+
+            <h2>The Demand For Goods</h2>
+            <p>Denote the total demand for goods by Z. Using the decomposition of GDP we saw above, we can write Z as:</p>
+            <p>$$Z \equiv C + I + G + X - IM$$</p>
+            <p>This equation is an identity (which is why it is written using the symbol ≡ rather than an
+                equals sign). It defines Z as the sum of consumption, plus investment, plus government
+                spending, plus exports, minus imports. We now need to think about the determinants of Z. To make the task easier, let’s first
+                make a number of simplifications:
+                <ol>
+                    <li>Assume that all firms produce the same good, which can then be used by consumers for
+                        consumption, by firms for investment or by the government. With this (big) simplification, we need to look at only one market – the market for ‘the’ good – and think about
+                        what determines supply and demand in that market.
+                    </li>
+                    <li>Assume that firms are willing to supply any amount of the good at a given price, P. This
+                        assumption allows us to focus on the role demand plays in the determination of output.
+                        As we shall see later in the book, this assumption is valid only in the short run. When we
+                        move to the study of the medium run, we will abandon it but, for
+                        the moment, it will simplify our discussion.
+                    </li>
+                    <li>Assume that the economy is closed – that it does not trade with the rest of the world: both
+                        exports and imports are zero. This assumption clearly goes against the facts: modern
+                        economies trade with the rest of the world. Later on (starting in Chapter 6), we will abandon this assumption as well and look at what happens when the economy is open but, for
+                        the moment, this assumption will also simplify our discussion because we won’t have to
+                        think about what determines exports and imports.
+                    </li>
+                </ol>
+            </p>
+            <p>Under the assumption that the economy is closed, X = IM = 0, so the demand for goods,
+                Z, is simply the sum of consumption, investment, and government spending:
+            </p>
+            <p>$$Z \equiv C + I + G$$</p>
+
+            <a class="carousel-button next" href="#financial-market" aria-label="link to financial-market chapter">Financial Market &#8594;</a>
+            <!-- sections hamburger menu -->
+            <div id="section-hamburger">
+                <div class="section-out">
+                    <a class="section-button" href="#sections" aria-label="open sections menu"> <i class="fas fa-book-open"></i></a>
+                </div>
+                <div id="sections" class="modal-window">
+                    <div>
+                        <a href="#" class="modal-close" aria-label="close modal"><i class="fa-solid fa-circle-xmark"></i></a>
+                        <h1>Short Run</h1>
+                        <ol>
+                            <li class="active"><a class="active" href="goods-market.html">The goods market</a></li>
+                            <li><a href="#financial-market">Financial markets</a></li>
+                            <li><a href="#is-lm">Goods and financial markets: the IS–LM model</a></li>
+                            <li><a href="#is-lm-open">The IS–LM model in an open economy</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>&copy; Agree to Disagree 2022</p>
+    </footer>
+
+    <!-- fontawsome script -->
+    <script src="https://kit.fontawesome.com/5a447ed7c5.js" crossorigin="anonymous"></script>
+    <!-- mathJax script -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
