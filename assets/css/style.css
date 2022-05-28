@@ -504,19 +504,6 @@ hr {
     flex-direction: row;
 }
 
-#back {
-    width: 100%;
-}
-
-#back a {
-    position: fixed;
-    margin: 0 1%;
-    padding-left: 2%;
-    color: var(--text-col);
-    text-decoration: none;
-    font-size: 80%;
-}
-
 /* Link to other sections */
 
 #sidebar {
@@ -531,8 +518,9 @@ hr {
     display: inline-block;
 }
 
-#sidebar h3 {
+#sidebar h2 {
     margin: 3% 15% 5% 15%;
+    font-size: 100%;
     display: block;
     text-transform: uppercase;
 }
@@ -559,6 +547,8 @@ hr {
     background-color: var(--highlight);
 }
 
+/* Chapter */
+
 #content {
     position: relative;
     float: right;
@@ -568,28 +558,18 @@ hr {
     overflow: scroll;
 }
 
-/* Chapter */
-
-#content h1 {
+#content h2 {
     font-size: 180%;
     font-weight: 900;
     text-transform: uppercase;
     margin: 3% 0 2% 0;
 }
 
-#content h2 {
+#content h3 {
     font-size: 130%;
     text-transform: capitalize;
     color: var(--highlight);
     margin: 3% 0 1% 0;
-
-}
-
-#content h3 {
-    font-size: 120%;
-    text-transform: capitalize;
-    color: var(--hp-button);
-    margin: 1% 0 1% 0;
 
 }
 
@@ -617,11 +597,27 @@ hr {
     margin: 2%;
 }
 
+table {
+    margin: 8% 0 8% 17vw;
+    text-align: center;
+    width: 30vw;
+}
+
+th, td {
+    padding: 10px;
+    font-size: 130%;
+    border: 1px solid var(--footer-col);
+}
+
+th, .first {
+    font-weight: 900;
+}
+
 #content > .carousel-button {
     margin: 10vh 0 10vh 25vw;
 }
 
-#section-hamburger {
+#chapter-hamburger {
     visibility: hidden;
 }
 
@@ -742,6 +738,10 @@ hr {
         margin: 1% 0;
     }
 
+    .theory-button {
+        padding: 45px 5%;
+    }
+
     /* Theory Modal */
 
     .modal-window h2 {
@@ -769,10 +769,6 @@ hr {
         display: none;
     }
 
-    #back {
-        visibility: hidden;
-    }
-
     /* Content */
 
     #content {
@@ -780,11 +776,11 @@ hr {
         max-width: 90%;
     }
 
-    #content h1 {
+    #content h2 {
         text-align: center;
     }
 
-    #content h2 {
+    #content h3 {
         margin-top: 2vh;
         font-size: 150%;
     }
@@ -799,13 +795,17 @@ hr {
         transform: translateX(-5vw);
     }
 
+    table {
+        margin-left: 27vw;
+    }
+
     /* Sections Hamburger menu */
 
-    #section-hamburger {
+    #chapter-hamburger {
         visibility: visible;
     }
 
-    .section-out {
+    .chapter-out {
         position: fixed;
         right: 4%;
         bottom: 5%;
@@ -816,22 +816,22 @@ hr {
         background-color: var(--highlight);
     }
 
-    .section-out i {
+    .chapter-out i {
         color: var(--bg);
     }
 
-    #section-hamburger h1 {
+    #chapter-hamburger h1 {
         color: var(--text-col);
         font-size: 4vw;
         text-align: center;
         margin: 5% 0;
     }
 
-    #section-hamburger i {
+    #chapter-hamburger i {
         font-size: 200%;
     }
 
-    #section-hamburger ol > li {
+    #chapter-hamburger ol > li {
         display: list-item;
         list-style-position: outside;
         list-style-type: decimal-leading-zero;
@@ -840,7 +840,7 @@ hr {
         margin: 10% 10%;
     }
 
-    #section-hamburger a {
+    #chapter-hamburger a {
         color: var(--text-col);
         font-size: 3vw;
         font-weight: 400;
@@ -850,7 +850,7 @@ hr {
         margin: 3% 0 3% 2%;
     }
 
-    #section-hamburger .active {
+    #chapter-hamburger .active {
         color: var(--highlight);
     } 
 
@@ -1033,19 +1033,21 @@ hr {
     }
 
     #content {
-        padding: 0 15vw;
-    }
-
-    #content h1 {
-        font-size: 6vw;
+        padding: 0% 10vw;
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     #content h2 {
+        font-size: 6vw;
+    }
+
+    #content h3 {
         font-size: 4.5vw;
     }
 
     #content p, li {
-        font-size: 3.5VW;
+        font-size: 3.5vw;
     }
 
     #content > .carousel-button {
@@ -1054,32 +1056,41 @@ hr {
         margin-bottom: 15vh;
     }
 
+    table {
+        margin: 20% 0;
+        transform: translateX(35%);
+    }
+    
+    th, td {
+        font-size: 100%;
+    }
+
     /* Sections Hamburger menu */
 
-    .section-out {
+    .chapter-out {
         right: 75%;
         bottom: 7%;
         font-size: 80%;
     }
 
-    #section-hamburger h1 {
+    #chapter-hamburger h2 {
         font-size: 4vw;
         margin: 8% 0;
     }
 
-    #section-hamburger i {
+    #chapter-hamburger i {
         font-size: 200%;
     }
 
-    #section-hamburger ol > li {
+    #chapter-hamburger ol > li {
         font-size: 3vw;
     }
 
-    #section-hamburger a {
+    #chapter-hamburger a {
         font-size: 4vw;
     }
 
-    #section-hamburger .active {
+    #chapter-hamburger .active {
         color: var(--highlight);
     } 
 
@@ -1109,6 +1120,11 @@ hr {
     
         .carousel-right {
             transform: translateY(7vh);
+        }
+
+        .carousel-button {
+            font-size: 100%;
+            padding-top: 1.8%;
         }
 
         /* Carousel Media */
@@ -1201,11 +1217,11 @@ hr {
             padding: 0 15vh;
         }
 
-        #content h1 {
+        #content h2 {
             font-size: 6vh;
         }
 
-        #content h2 {
+        #content h3 {
             font-size: 4.5vh;
         }
 
@@ -1219,23 +1235,28 @@ hr {
             margin-bottom: 15vw;
         }
 
+        table {
+            margin: 10% 0;
+            transform: translateX(85%);
+        }
+
         /* Sections Hamburger menu */
 
-        .section-out {
+        .chapter-out {
             padding: 2%;
             font-size: 40%;
             right: 85%;
         }
 
-        #section-hamburger h1 {
+        #chapter-hamburger h1 {
             font-size: 4vh;
         }
 
-        #section-hamburger ol > li {
+        #chapter-hamburger ol > li {
             font-size: 3vh;
         }
 
-        #section-hamburger a {
+        #chapter-hamburger a {
             font-size: 4vh;
         }
     

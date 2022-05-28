@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="The economics textbook in your pocket. Learn about micro and macroeconomics.">
+    <meta name="keywords" content="pocketeconomics, economics, microeconomics, game theory">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="./assets/images/pocket_logo.png" sizes="16x16">
+    <title>PocketEconomics</title>
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1 id="logo"> <img src="./assets/images/pocket_logo.png" alt="logo"> <span class="highlight">Pocket</span>Economics</h1>
+        </a>
+
+        <nav id="menu">
+            <ul>
+                <li class="phone-menu">
+                    <a class="hamburger" href="#hamburger-menu" aria-label="website menu"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="computer-menu">
+                    <a href="index.html" aria-label="go to homepage">Home</a>
+                </li>
+                <li class="computer-menu">
+                    <a href="macro.html" aria-label="go to macroeconomics home page">Macro</a>
+                </li>
+                <li class="computer-menu">
+                    <a href="micro.html" aria-label="go to microeconomics home page" class="active">Micro</a>
+                </li>
+                <li class="computer-menu">
+                    <a href="about.html" aria-label="go to about us">About</a>
+                </li>
+            </ul>
+            <!-- hamburger menu -->
+            <div id="hamburger-menu" class="modal-window">
+                <div>
+                    <a href="#" class="modal-close" aria-label="close modal"><i class="fa-solid fa-circle-xmark"></i></a>
+                    <ul>
+                        <li><a href="index.html" aria-label="go to homepage">Home</a></li>
+                        <li><a href="macro.html" aria-label="go to macroeconomics home page">Macro</a></li>
+                        <li><a href="micro.html" aria-label="go to microeconomics home page" class="active">Micro</a></li>
+                        <li><a href="about.html" aria-label="go to about us">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="chapters">
+
+        <nav id="sidebar">
+            <h2>Microeconomics</h2>
+            <a href="consumer.html" aria-label="go to consumer theory chapter">Consumer Theory</a>
+            <a class="active-chapter" href="#" aria-label="go to game theory chapter">Game Theory</a>
+        </nav>
+        <article id="content">
+            <h2>Choice in strategic interaction</h2>
+            <p>
+                We already discussed a little bit of the economic theory of choice when agents face decision problems outside a social and interactive context. 
+                We concluded that it seemed reasonable to assume that people behave <em>as if</em> they have a preference over objects of choice and choose what they like the most. 
+                In most economic scenarios, however, agents are in circumstances in which what they get not only depends on their choice, but also on the choice of others. 
+                The discipline that studies choice in strategic frameworks is <em>game theory</em>, which became widespread after the work of @vonneumannTheoryGamesEconomic2007. 
+                In this chapter, we briefly introduce its main features.
+            </p>
+            
+            <h3>A game of trade.</h3>
+            
+            <p>
+                To fix ideas, let's study an example of strategic interaction of economic relevance. The two protagonists of your story are Ann \(A\) and Bob \(B\). 
+                Ann has an apple \(a\) in her purse, while Bob has a banana \(b\) in his bag pack. The problem is that Ann prefers bananas to apples, while Bob likes apples more. 
+                In the language of our previous post, Ann's preference relation is \(a \succsim_A b\) , while Bob has \(b \succsim_B a\), the index clarifies whose preference relation we are talking about. 
+                Imagine they engage in the following interaction: they have to simultaneously decide whether to give their fruit to the other person. 
+                The problem is that they do not know if their opponent would like to exchange their fruit. 
+                Assume that \(A\) decides to give his apple to \(B\), while \(B\) instead keeps his banana for him. The outcome is that \(B\) can consume both \(a\) and \(b\), while \(A\) has nothing left! 
+                However, if both \(A\) and \(B\) decide to give, they will end up in a situation which was better than the status quo, as \(A\) can consume her favourite banana while \(B\) has his preferred apple. 
+                Since both agents do not have any guarantee that their opponent will choose to trade, it is not sure that the best outcome for all of them will be reached! 
+                The strategic uncertainty of the interactive situation makes the choice problem not easy to handle. 
+                Since circumstances like this one are ubiquitous in economics, the study of reasonable behaviour in interactive settings is of fundamental importance. 
+                The game of trade we just studied together is a prototypical famous example usually called <em>the prisoners' dilemma</em>.
+            </p>
+
+            <h3>One possible approach.</h3>
+            
+            <p>
+                How to study how people behave in games? We will discuss the main approach employed by economists, the equilibrium approach pioneered by @nashNoncooperativeGames1951, in the next post. 
+                For now, we stick with a very intuitive decision process which idea is the following. Take the perspective of Ann in the previous trade game. 
+                She has two possibilities: give or not give the fruit. To decide what to do, she envisions the outcome of her choice in all possible scenarios. 
+                The following table represents what could happen as a consequence of any of her choices.
+            </p>
+
+            <table>
+                <tr>
+                  <th>A\B</th>
+                  <th>Give</th>
+                  <th>Not</th>
+                </tr>
+                <tr>
+                  <td class="first">Give</td>
+                  <td>b</td>
+                  <td>a, b</td>
+                </tr>
+                <tr>
+                  <td class="first">Not</td>
+                  <td>a, b</td>
+                  <td>a</td>
+                </tr>
+              </table>
+            
+            <p>
+                Assume Ann decides to Give her apple to Bob. Then, if Bob gives the banana to Ann she ends up with the banana only, as she gave up the apple. 
+                Instead, if Bob decides to keep the banana, she will end up with nothing! If Ann keeps the apple for herself, she might end up with both the apple and the banana or the banana only, 
+                depending on Bob's choice. What we just presented is concisely captured by the table above. Now, assume that Bob gives the banana, what is best for Ann? To Not give the apple, 
+                so that she ends up with both fruits. What if Bob decides to not give the banana? Then still Ann prefers to not give the apple, as otherwise, she would end up with nothing. 
+                Hence, regardless of what Bob is considering doing, Ann is better off not giving. Of course, the same reasoning holds if we take the perspective of Bob. 
+                If both of them follow this reasoning, they will end up not trading, while they could have reached a better outcome by exchanging fruits! 
+                We will talk about this and many other problems in strategic scenarios in the following posts.
+            </p>
+
+            <p>
+                If you are more interested in game theory you can check the accessible manuals of @osborneIntroductionGameTheory2004 and @tadelisGameTheoryIntroduction2013.
+            </p>
+
+            <p>
+                If you are interested in the history of utility theory, you can check @moscatiMeasuringUtilityMarginal2018 for a historical perspective and @binmoreEarlyUtilitarians2021  
+                for a more philosophical oriented text. For a recent discussion about the philosophical foundations of revealed preference theory check @thomaDefenceRevealedPreference2021.
+            </p>
+
+            <a class="carousel-button next" href="micro.html" aria-label="Go back to Microeconomics home page"> &#8592; Microeconomics</a>
+            <!-- sections hamburger menu -->
+            <nav id="chapter-hamburger">
+                <div class="chapter-out">
+                    <a class="chapter-button" href="#chapters-menu" aria-label="open sections menu"> <i class="fas fa-book-open"></i></a>
+                </div>
+                <div id="chapters-menu" class="modal-window">
+                    <div>
+                        <a href="#" class="modal-close" aria-label="close modal"><i class="fa-solid fa-circle-xmark"></i></a>
+                        <h2>Microeconomics</h2>
+                        <ol>
+                            <li class="active"><a class="active" href="consumer.html" aria-label="go to consumer theory chapter">Consumer Theory</a></li>
+                            <li><a href="#" aria-label="go to game theory chapter">Game Theory</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </nav>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Agree to Disagree 2022</p>
+    </footer>
+
+    <!-- fontawsome script -->
+    <script src="https://kit.fontawesome.com/5a447ed7c5.js" crossorigin="anonymous"></script>
+    <!-- mathJax script -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
