@@ -250,7 +250,7 @@ main {
 }
 
 .carousel-center {
-    transform: translateX(0%) translateY(25vh);
+    transform: translateX(0%) translateY(20vh);
     margin: 0 25% 0 25%;
 }
 
@@ -391,7 +391,7 @@ hr {
     cursor: pointer;
     min-height: 40px;
     outline: 0;
-    padding: 45px 70px;
+    padding: 45px 7px;
     margin: 3% 5%;
 
     background: var(--bg);
@@ -508,6 +508,10 @@ hr {
 #chapters {
     width: 100%;
     flex-direction: row;
+}
+
+.reference {
+    color: var(--highlight);
 }
 
 /* Link to other sections */
