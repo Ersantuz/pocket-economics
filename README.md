@@ -140,8 +140,10 @@ The project was deployed to GitHub Pages using the following steps...
 ### Content
 
 -   All the pages were designed by the developer, always listening the precious suggestions of friends and tutor.
--   All the code was written by the developer.
--   Button styles are take from [getcssscan](https://getcssscan.com/css-buttons-examples).
+-   Button styles were taken from [getcssscan](https://getcssscan.com/css-buttons-examples).
+-   Modal windows throughout the website are inspired by [codepen example](https://codepen.io/timothylong/pen/AJxrPR).
+-   Everything else has been coded by the develper.
+-   The code for the team image design was taken from the [Love Running](https://github.com/Ersantuz/love-running) project.
 -   The theoretical content was written in association with [Enrico Mattia Salonia](https://enricomattia.github.io/), PhD student and teaching assistant at [TSE](https://www.tse-fr.eu/?lang=en). 
 -   The introduction to each theoretical part (the content in microeconomics and macroeconomics main pages) are taken from [Investopedia](https://www.investopedia.com/). 
 
