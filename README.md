@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="assets/images/pocket_logo.png" width=25 alt="PocketEconomics logo"/> PocketEconomics
+    <img src="assets/images/pocket_logo.webp" width=25 alt="PocketEconomics logo"/> PocketEconomics
 </h1>
 
 [View the live project here.](https://ersantuz.github.io/pocket-economics/index.html)
