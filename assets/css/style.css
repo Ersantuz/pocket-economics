@@ -159,6 +159,7 @@ main {
     margin-top: 5px;
 }
 
+/* The button style was taken from https://getcssscan.com/css-buttons-examples */
 .carousel-button {
     margin: 20px 0;
     display: inline-block;
@@ -328,9 +329,10 @@ main {
     position: relative;
     background-color: rgba(0, 0, 0, 0);
     touch-action: manipulation;
-  }
   
-  .website-button:after {
+}
+  
+.website-button:after {
     content: "";
     background-color: var(--hp-button);
     width: 100%;
@@ -340,12 +342,12 @@ main {
     top: 7px;
     left: 7px;
     transition: 0.2s;
-  }
+}
   
-  .website-button:hover:after {
+.website-button:hover:after {
     top: 0px;
     left: 0px;
-  }
+}
 
 /* Home Page for Theory Sections */
 
@@ -383,6 +385,7 @@ hr {
     text-align: center;
 }
 
+/* The button style was taken from https://getcssscan.com/css-buttons-examples */
 .theory-button {
     width: 35%;
     min-width: 300px;
