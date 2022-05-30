@@ -79,11 +79,11 @@ The main aim of *PocketEconomics* is to provide an accessible framework for econ
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project. Lighthouse was used to validate the quality of the website.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C Markup Validator](https://validator.w3.org/) - [Home Page](https://validator.w3.org/nu/?showsource=yes&checkerrorpages=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fersantuz.github.io%2Fpocket-economics%2Findex.html), [About page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fersantuz.github.io%2Fpocket-economics%2Fabout.html), [Theory main pages (Micro/Macro)](https://validator.w3.org/nu/?doc=https%3A%2F%2Fersantuz.github.io%2Fpocket-economics%2Fmacro.html), [Theory Chapters](https://validator.w3.org/nu/?doc=https%3A%2F%2Fersantuz.github.io%2Fpocket-economics%2Fgame-theory.html)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fersantuz.github.io%2Fpocket-economics%2Findex.html&usermedium=all&vextwarning=&warning=1)
-     
+-   [Lighthouse](https://developers.google.com/web/tools/lighthouse) - [Desktop](assets/pdf/lighthouse-report-desktop.pdf), [Mobile](assets/pdf/lighthouse-report-mobile.pdf)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -103,14 +103,24 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Microsoft Edge, Firefox and Safari.
+-   The website was tested on Google Chrome, Microsoft Edge, Firefox and Safari.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPad Air, iPad Mini, iPhone SE, iPhone XR.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends from economics' courses were asked to perform user testing to enanhce user experience throughout the website.
 
 ### Known Bugs
 
 -   On Safari the carousel design doesn't work.
+-   SEO performs worst on mobile devices since the paragraphs in the home page are hidden on smaller screen sizes.
+-   Theory pages belonging to the macroeconomics sections are still on development, hence the buttons designed to lend on the content page won't open any page.
+
+### Further Developments
+
+-   The content for macroeconomics chapters will be added soon.
+-   As outlined in the [manifesto](#manifesto), the website is planning to incorporate interactivity features in theoretical sections. This is planned to be done through the implentation of two main features: 
+    1. iframes are going to be added, containing interactive graphs designed on [geogebra](https://www.geogebra.org/), which will allow users to interact with graphs related to the theory.   
+    2. by means of python, [plotly](https://plotly.com/python/) interactive graphs will be added cointaining the results for major economic models. Such graphs will be interactive as they wll show how results changes by choosing different parameters of input.
 
 ## Deployment
 
@@ -129,8 +139,11 @@ The project was deployed to GitHub Pages using the following steps...
 
 ### Content
 
+-   All the pages were designed by the developer, always listening the precious suggestions of friends and tutor.
 -   All the code was written by the developer.
--   The theoretical content was written in association with [Enrico Mattia Salonia](https://enricomattia.github.io/), PhD student and teaching assistant at [TSE](https://www.tse-fr.eu/?lang=en) 
+-   Button styles are take from [getcssscan](https://getcssscan.com/css-buttons-examples).
+-   The theoretical content was written in association with [Enrico Mattia Salonia](https://enricomattia.github.io/), PhD student and teaching assistant at [TSE](https://www.tse-fr.eu/?lang=en). 
+-   The introduction to each theoretical part (the content in microeconomics and macroeconomics main pages) are taken from [Investopedia](https://www.investopedia.com/). 
 
 ### Media
 
